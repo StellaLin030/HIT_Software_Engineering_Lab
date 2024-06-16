@@ -94,7 +94,7 @@ import router from '../router';
 
 export default {
   name: 'UserDashboard',
-  components: {},
+  components: { },
   computed: {
     // 将 Markdown 文本渲染为 HTML
     html() {
@@ -303,9 +303,7 @@ export default {
 }
 
 .right-version {
-//width: 60%;
   margin: auto;
-//background-color: #F9FFD8;
   height: 5%;
   display: flex;
   justify-content: start;
@@ -320,9 +318,7 @@ export default {
 
 .llm-chat-demo {
   width: 58%;
-  margin: auto;
-//margin-left: 20px;
-//font-family: "黑体", "SimHei", sans-serif;
+  margin-left: 20px;
   font-family: Söhne, ui-sans-serif, system;
   font-variation-settings: normal;
   font-weight: 550;

@@ -47,6 +47,7 @@ def stream_numbers():
         messages_tongyi.append({'role': 'assistant', 'content': whole_message})
         json_data = json.dumps({"message": 'done'})
         yield f"data: {json_data}\n\n"  # 按照SSE格式发送数据
+        print(messages_tongyi)
         print('结束')
 
     headers = {
@@ -85,6 +86,7 @@ def get_answer():
         messages_chatgpt.append({'role': 'system', 'content': response})
         json_data = json.dumps({"message": 'done'})
         yield f"data: {json_data}\n\n"  # 按照SSE格式发送数据
+        print(messages_chatgpt)
         print('结束')
 
     headers = {
@@ -135,6 +137,7 @@ def wenxin_get_answer():
         messages_wenxin.append({'role': 'assistant', 'content': full_response})
         json_data = json.dumps({"message": 'done'})
         yield f"data: {json_data}\n\n"  # 按照SSE格式发送数据
+        print(messages_wenxin)
         print('结束')
 
     headers = {

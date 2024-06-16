@@ -38,5 +38,5 @@ class Conversations(db.Model):
     chatgpt_messages = db.Column(db.JSON)  # 改为 JSON 类型
     wenxin_messages = db.Column(db.JSON)   # 改为 JSON 类型
     tongyi_messages = db.Column(db.JSON)   # 改为 JSON 类型
-    summary=db.Column(db.String(15))       # 来自文心一言的总结
+    summary = db.Column(db.String(15))       # 来自文心一言的总结
     timestamp = db.Column(db.TIMESTAMP, default=datetime.utcnow)
